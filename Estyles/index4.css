@@ -1,0 +1,105 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url(2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*imagen del emblema*/
+.enlace{
+	float: right;
+}
+
+
+
+.navegacion{
+	background: red;
+	height: 80px;
+	width: 100%;
+	padding-top: 1px;
+}
+
+
+.menu {cursor: pointer;}
+
+
+.navegacion ul {list-style: none;}
+
+
+.menu > li{display: inline-block;}
+
+
+.menu > li > a{
+	display: block;
+	padding: 19px 5px;
+	color: wheat;
+	font-family: 'open sans';
+	text-decoration: none;
+	font-size: 21px;
+}
+
+
+.menu li a:hover{
+	color: black;
+	transition: all .9s;
+}
+
+
+.submenu{
+	position: absolute;
+	background: rgba(225, 0, 0, 0.864);
+	left: 0px;
+	width: 25% ;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 4.5s;
+
+}
+
+
+.submenu li a{
+	display: block;
+	padding: 30px;
+	color: white;
+	font-family:'open sans';
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.parrafo{
+	z-index: 1;
+	width: 500px;
+	height: 400;
+	padding: 3px 2px;
+	font-size: 15px;
+	line-height: 1.5;
+	background: #fff;
+	margin-top: 88px;
+	box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.727);
+	border-radius: 5px;
+	float: right;
+	text-align: justify;
+ }
+ .parrafo img{
+	border-radius: 5px;
+	float: left;
+	margin-right: 12px;
+ }
+ 
+ p{
+	font-size: 17px;
+ }
